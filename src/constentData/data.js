@@ -122,14 +122,6 @@ export const technologyLogo = [
     src: "assets/technology/mongodb.svg",
   },
   {
-    title: "CLOUDINARY",
-    src: "assets/technology/cloudinary.svg",
-  },
-  {
-    title: "STRAPI",
-    src: "assets/technology/strapi.svg",
-  },
-  {
     title: "NEXT JS",
     src: "assets/technology/next-js.svg",
   },

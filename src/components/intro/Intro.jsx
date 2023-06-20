@@ -26,7 +26,6 @@ const Intro = () => {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let interval = null;
   useEffect(() => {
-
     const screen = document.querySelector(".home-content");
     const name = document.querySelector(".randome-text");
 
@@ -65,7 +64,6 @@ const Intro = () => {
       setText(name.dataset.value);
     }
 
-
     return () => {
       screen.removeEventListener("mouseenter", startAnimation);
       screen.removeEventListener("mouseleave", stopAnimation);
@@ -77,16 +75,16 @@ const Intro = () => {
       <section id="intro" className="home">
         <div className="home-content">
           <section className="content-container">
-            <h2>Hello, It's Me</h2>
+            <h2>Hey,</h2>
             <h1>SHAHNAWAZ ANSARI</h1>
             <h3>
-              And I'm a{" "}
               <span className="randome-text" data-value="Web Developer">
                 {text}
               </span>
             </h3>
             <p>
-              To obtain a position as a Web Developer where I can utilize my technical skills, creativity, and passion for technology to develop user-friendly and visually appealing web applications.
+              Seeking a Web Developer role to utilize technical skills,
+              creativity, and passion for user-friendly web applications.
             </p>
             <div className="social-media">
               {iconItems.map((elem, index) => (
@@ -94,7 +92,7 @@ const Intro = () => {
                   key={index}
                   href={elem.link}
                   style={{
-                    animation: `slideLeft 0.5s ease ${index * 0.2}s forwards`
+                    animation: `slideLeft 0.5s ease ${index * 0.2}s forwards`,
                   }}
                   target="_blank"
                 >
@@ -115,7 +113,6 @@ const Intro = () => {
               </div>
             </div>
           </section>
-
         </div>
         <div className="animation-container">
           <div className="animationBtn" onClick={() => window.scrollTo(0, 650)}>
