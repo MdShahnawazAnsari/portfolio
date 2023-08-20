@@ -4,10 +4,14 @@ import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-
 function SingleProject({
-  data: { title, link, technologyLogo, img, summary },
+  data: { title, link, gitHub, technologyLogo, img, summary },
 }) {
+  const githubClick = () => {
+    // Open the GitHub link in a new tab
+    window.open(gitHub, "_blank");
+  };
+
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -17,14 +21,16 @@ function SingleProject({
         background: "var(--background-second)",
       }}
       icon={<i className="fa-brands fa-github"></i>}
+      iconOnClick={githubClick}
       iconStyle={{
         color: "var(--text-black)",
         fontSize: "2.5rem",
         alignItems: "center",
         justifyContent: "center",
         display: "flex",
+        cursor: "pointer",
       }}
-       key={link}
+      key={link}
     >
       <div className="project-container">
         <Carousel

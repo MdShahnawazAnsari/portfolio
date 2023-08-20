@@ -75,7 +75,6 @@ const Intro = () => {
       <section id="intro" className="home">
         <div className="home-content">
           <section className="content-container">
-            <h2>Hey,</h2>
             <h1>SHAHNAWAZ ANSARI</h1>
             <h3>
               <span className="randome-text" data-value="Web Developer">

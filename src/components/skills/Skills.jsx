@@ -4,13 +4,13 @@ import { technologyLogo } from "../../constentData/data";
 const Skills = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [runAnimation, setRunAnimation] = useState(false);
-  
-   const controlAnimation = () => {
-    if (window.scrollY > 70) setRunAnimation(true) 
+
+  const controlAnimation = () => {
+    if (window.scrollY > 70) setRunAnimation(true);
     setLastScrollY(window.scrollY);
   };
-  
-   useEffect(() => {
+
+  useEffect(() => {
     window.addEventListener("scroll", controlAnimation);
     return () => {
       window.removeEventListener("scroll", controlAnimation);
@@ -18,17 +18,17 @@ const Skills = () => {
   }, [lastScrollY]);
 
   return (
-    <section className="skills-section" id="skills">
-      <h2>Technology I Know</h2>
-      <div
-        className="technology"
-      >
+    <section className="skills-section" id="tech">
+      <h2>Tech Stack</h2>
+      <div className="technology">
         {technologyLogo.map((item, index) => (
           <div
             key={index}
             className="logo"
             style={{
-              animation: `${runAnimation && `slideLeft 1.5s ease ${index * 0.2}s forwards`}`,
+              animation: `${
+                runAnimation && `slideLeft 1.5s ease ${index * 0.2}s forwards`
+              }`,
             }}
           >
             <img src={item.src} alt={item.title} />

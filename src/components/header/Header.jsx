@@ -34,7 +34,7 @@ const Header = () => {
 
   const menuItems = [
     { title: "Intro", index: 0, link: "#intro" },
-    { title: "Skills", index: 1, link: "#skills" },
+    { title: "Tech", index: 1, link: "#tech" },
     { title: "Projects", index: 2, link: "#projects" },
     { title: "Contact", index: 3, link: "#contact" },
   ];
@@ -48,9 +48,8 @@ const Header = () => {
         </div>
         <ul className="menuItems">
           {menuItems.map((item) => (
-            <li>
+            <li key={item.index}>
               <a
-                key={item.index}
                 style={{
                   "--i": item.index,
                   animationDelay: `calc(0.2s * var(--i))`,

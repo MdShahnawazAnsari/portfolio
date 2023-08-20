@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SingleProject from "./singleProject/SingleProject";
 import "./Projects.scss";
-import {
-  VerticalTimeline,
-} from "react-vertical-timeline-component";
+import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { projectData } from "../../constentData/data";
 
@@ -43,8 +41,11 @@ const Projects = () => {
               : { animation: "" }
           }
         >
-          <VerticalTimeline layout={ "2-columns" } lineColor="var(--text-black)">
-            {projectData.map(item => (<SingleProject data={item} />))}
+          <VerticalTimeline layout={"2-columns"} lineColor="var(--text-black)">
+            <SingleProject data={projectData[0]} />
+            <SingleProject data={projectData[1]} />
+            <SingleProject data={projectData[2]} />
+            <SingleProject data={projectData[3]} />
           </VerticalTimeline>
         </div>
       </div>

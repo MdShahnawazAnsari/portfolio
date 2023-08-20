@@ -9,12 +9,36 @@ export const projectData = [
       "assets/projectImages/shoe-store/shoe-store-5.webp",
     ],
     link: "https://shoe-store-next-js-vercel.vercel.app/",
+    gitHub: "https://github.com/ShaitonCreator/Shoe-Store-Next.JS-vercel",
     summary: "Shoe Store with Next js 13 and strapi as an backend",
     technologyLogo: [
       "assets/technology/next-js.svg",
       "assets/technology/tailwind.svg",
       "assets/technology/strapi.svg",
       "assets/technology/cloudinary.svg",
+    ],
+  },
+  {
+    title: "Admin Template",
+    img: [
+      "assets/projectImages/admin-template/admin-template-1.png",
+      "assets/projectImages/admin-template/admin-template-2.png",
+      "assets/projectImages/admin-template/admin-template-3.png",
+      "assets/projectImages/admin-template/admin-template-4.png",
+      "assets/projectImages/admin-template/admin-template-5.png",
+      "assets/projectImages/admin-template/admin-template-6.png",
+      "assets/projectImages/admin-template/admin-template-7.png",
+      "assets/projectImages/admin-template/admin-template-8.png",
+      "assets/projectImages/admin-template/admin-template-9.png",
+      "assets/projectImages/admin-template/admin-template-10.png",
+    ],
+    link: "https://admin-template-swart.vercel.app/",
+    gitHub: "https://github.com/ShaitonCreator/admin-template",
+    summary:
+      "Admin Template with products statistics, image gallery, product page and admins page",
+    technologyLogo: [
+      "assets/technology/next-js.svg",
+      "assets/technology/tailwind.svg",
     ],
   },
   {
@@ -30,6 +54,7 @@ export const projectData = [
       "assets/projectImages/hunting-codders/hunting-codders-8.webp",
     ],
     link: "https://hunting-codders.vercel.app/",
+    gitHub: "https://github.com/ShaitonCreator/Hunting-Codders",
     summary:
       "A Blog App with Compleate Backend, With All CRUD operation and Authentications",
     technologyLogo: [
@@ -50,28 +75,11 @@ export const projectData = [
       "assets/projectImages/movix/movix-6.webp",
     ],
     link: "https://movix-sooty.vercel.app/",
+    gitHub: "https://github.com/ShaitonCreator/movix",
     summary: "Movie Searching App with loading Skeleton",
     technologyLogo: [
       "assets/technology/react.svg",
       "assets/technology/sass.svg",
-    ],
-  },
-  {
-    title: "E Commerce",
-    img: [
-      "assets/projectImages/e-commerce/e-commerce-1.webp",
-      "assets/projectImages/e-commerce/e-commerce-2.webp",
-      "assets/projectImages/e-commerce/e-commerce-3.webp",
-      "assets/projectImages/e-commerce/e-commerce-4.webp",
-      "assets/projectImages/e-commerce/e-commerce-5.webp",
-    ],
-    link: "https://e-commerce-vite-ruby.vercel.app/",
-    summary: "Its an E-Commerce site with Strapi backend and live search.",
-    technologyLogo: [
-      "assets/technology/react.svg",
-      "assets/technology/strapi.svg",
-      "assets/technology/sass.svg",
-      "assets/technology/cloudinary.svg",
     ],
   },
 ];
